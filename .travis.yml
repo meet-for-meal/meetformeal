@@ -1,0 +1,6 @@
+language: ruby
+script: bundle exec rspec spec
+services:
+  - mongodb
+env:
+  - SECRET_KEY_BASE="abc123_test" DEVISE_SECRET_KEY="abc123_test"
